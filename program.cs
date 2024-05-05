@@ -33,11 +33,11 @@ class Program
         Superheroe r;
         double peso, fuerza, velocidad;
         string nombre, ciudad;
-        nombre = IngresarString("ingrese su nombre")
-        ciudad = IngresarString("ingrese la ciudad donde vive")
-        peso = IngresarPeso("ingrese su peso")
-        fuerza = IngresarFuerzaYVelocidad("ingrese su fuerza")
-        velocidad = IngresarFuerzaYVelocidad("ingrese su velocidad")
+        nombre = IngresarString("ingrese su nombre");
+        ciudad = IngresarString("ingrese la ciudad donde vive");
+        peso = IngresarPeso("ingrese su peso");
+        fuerza = IngresarFuerzaYVelocidad("ingrese su fuerza");
+        velocidad = IngresarFuerzaYVelocidad("ingrese su velocidad");
 
         r = new Superheroe(peso, nombre, ciudad, fuerza, velocidad);
         return r;
@@ -48,7 +48,7 @@ class Program
         do{
             Console.WriteLine(m);
             r = double.Parse(Console.ReadLine());
-        }while(r< 1 || r>100)
+        }while(r< 1 || r>100);
         return r;
     }
     static double IngresarPeso (string m)
@@ -57,7 +57,7 @@ class Program
         do{
             Console.WriteLine(m);
             r = double.Parse(Console.ReadLine());
-        }while(r< 1)
+        }while(r< 1);
         return r;
     }
     static string IngresarString (string m)
@@ -66,7 +66,7 @@ class Program
         do{
             Console.WriteLine(m);
             r = Console.ReadLine();
-        }while(r!= string.Empty)
+        }while(r!= string.Empty);
         return r;
     }
 

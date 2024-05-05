@@ -6,13 +6,13 @@ class Superheroe
     public double Fuerza {get;set;}
     public double Velocidad {get;set;}
 
-    public Superhereoe(double peso, string nombre, string ciudad, double fuerza, double velocidad) 
+    public Superheroe(double peso, string nombre, string ciudad, double fuerza, double velocidad) 
     {
-        Peso = dni;
-        Nombre = apellido;
-        Ciudad = nombre;
-        Fuerza = fechaDeNacimiento;
-        Velocidad = email;
+        Peso = peso;
+        Nombre = nombre;
+        Ciudad = ciudad;
+        Fuerza = fuerza;
+        Velocidad = velocidad;
     }
 
     public double ObtenerSkill()
