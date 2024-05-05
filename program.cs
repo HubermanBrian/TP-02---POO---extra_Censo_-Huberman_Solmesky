@@ -22,20 +22,35 @@ class Program
                 case "iii": 
                 if (superheroe1 != null && superheroe2 != null)
                 {
-                    Superheroe superheroeGanador;
+                    Superheroe superheroeGanador = null;
+                    double puntosDeDiferencia = 0;
                     if (superheroe1.ObtenerSkill()> superheroe2.ObtenerSkill())
                     {
                         superheroeGanador = superheroe1;
+                        puntosDeDiferencia = superheroe1.ObtenerSkill()- superheroe2.ObtenerSkill();
                     }
                     else if (superheroe1.ObtenerSkill()< superheroe2.ObtenerSkill())
                     {
                         superheroeGanador = superheroe2;
+                        puntosDeDiferencia = superheroe2.ObtenerSkill()- superheroe1.ObtenerSkill();
                     }
                     else 
                     {
                         Console.WriteLine("Empataron");
-                    }
+                    }   
 
+                    if(puntosDeDiferencia > 30)
+                    {
+                        Console.WriteLine($"Ganó {superheroeGanador.Nombre} por amplia diferencia");
+                    }
+                    else if(puntosDeDiferencia > 10)
+                    {
+                        Console.WriteLine($"Ganó {superheroeGanador.Nombre}. ¡Fue muy parejo!");
+                    }
+                    else if (puntosDeDiferencia > 0)
+                    {
+                        Console.WriteLine($"Ganó {superheroeGanador.Nombre}. ¡No le sobró nada!");
+                    }
                 }
 
                     
