@@ -4,6 +4,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        string opcion;
+        opcion = IngresarOpcion("Ingresa la opcion que desees");
+    }
+    static string IngresarOpcion(string m)
+    {
+        string r;
+        do
+        {
+            Console.WriteLine(m);
+            r = Console.ReadLine();
+        }while (r!= "i" && r!= "ii" && r!= "iii" && r!= "iv");
+        return r;
     }
 }
