@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP 02 - POO - extra_Censo_ Huberman_Solmesky")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d5cfc40cedd230919fa03578f37d342ae73ffe1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dde172e825a647be295d66b1065443fc33800ba0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP 02 - POO - extra_Censo_ Huberman_Solmesky")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP 02 - POO - extra_Censo_ Huberman_Solmesky")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -62,18 +62,19 @@ class Program
     static Superheroe ObtenerSuperheroe()
     {
         Superheroe r;
-        double peso, fuerza, velocidad;
+        double peso, fuerza, velocidad, inteligencia;
         string nombre, ciudad;
         nombre = IngresarString("ingrese su nombre");
         ciudad = IngresarString("ingrese la ciudad donde vive");
         peso = IngresarPeso("ingrese su peso");
-        fuerza = IngresarFuerzaYVelocidad("ingrese su fuerza");
-        velocidad = IngresarFuerzaYVelocidad("ingrese su velocidad");
+        fuerza = IngresarFuerzaVelocidadInteligencia("ingrese su fuerza");
+        velocidad = IngresarFuerzaVelocidadInteligencia("ingrese su velocidad");
+        inteligencia = IngresarFuerzaVelocidadInteligencia("ingrese su inteligencia");
 
-        r = new Superheroe(peso, nombre, ciudad, fuerza, velocidad);
+        r = new Superheroe(peso, nombre, ciudad, fuerza, velocidad, inteligencia);
         return r;
     }
-    static double IngresarFuerzaYVelocidad (string m)
+    static double IngresarFuerzaVelocidadInteligencia (string m)
     {
         double r;
         do{
