@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         string opcion;
-        Superheroe superheroe1, superheroe2;
+        Superheroe superheroe1 = null, superheroe2 = null;
         opcion = IngresarOpcion("Ingresa la opcion que desees");
         while(opcion != "iv")
         {
@@ -20,6 +20,25 @@ class Program
                     opcion = IngresarOpcion("Ingresa la opcion que desees");
                     break;
                 case "iii": 
+                if (superheroe1 != null && superheroe2 != null)
+                {
+                    Superheroe superheroeGanador;
+                    if (superheroe1.ObtenerSkill()> superheroe2.ObtenerSkill())
+                    {
+                        superheroeGanador = superheroe1;
+                    }
+                    else if (superheroe1.ObtenerSkill()< superheroe2.ObtenerSkill())
+                    {
+                        superheroeGanador = superheroe2;
+                    }
+                    else 
+                    {
+                        Console.WriteLine("Empataron");
+                    }
+
+                }
+
+                    
                     opcion = IngresarOpcion("Ingresa la opcion que desees");
                     break;
             
